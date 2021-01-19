@@ -1,0 +1,44 @@
+
+body{
+	background: url("https://source.unsplash.com/1600x900/?nature, skies, adventure") no-repeat center center fixed; 
+	margin:0;
+	line-height: 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+	
+}
+.box{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Yusei Magic', sans-serif;
+   text-shadow: 2px 2px #191B19
+
+}
+
+h1{
+	
+	margin-top: 20%;
+	margin-bottom: 10%;
+	font-size:10em;
+	color: white;
+
+
+}
+
+h2{
+margin-top:0px;
+	font-size:4em;
+	color: white;
+}
+
+
+/*.container{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
