@@ -1,23 +1,20 @@
-
 body{
-	background: url("https://source.unsplash.com/1600x900/?nature, skies, adventure") no-repeat center center fixed; 
+	background: url("https://source.unsplash.com/daily") no-repeat center center fixed; 
 	margin:0;
 	line-height: 0px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	
-	
+  	-webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+ 	 -o-background-size: cover;
+  	background-size: cover;
 }
+
 .box{
 	display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Yusei Magic', sans-serif;
-   text-shadow: 2px 2px #191B19
-
+ 	 justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+  	font-family: 'Yusei Magic', sans-serif;
+   	text-shadow: 2px 2px #191B19
 }
 
 h1{
@@ -26,19 +23,24 @@ h1{
 	margin-bottom: 10%;
 	font-size:10em;
 	color: white;
-
-
 }
 
 h2{
-margin-top:0px;
+	margin-top:20px;
 	font-size:4em;
 	color: white;
 }
 
+@media only screen and (max-width: 900px){
+    .box{
+        font-size: 0.8em;
+        padding: 0;
+    }
+}
 
-/*.container{
-	display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
+@media only screen and (max-width: 600px){
+    .box{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}

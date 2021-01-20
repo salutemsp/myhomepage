@@ -14,23 +14,22 @@ function Timer() {
   let today = new Date();
   let h = today.getHours();
   let m = today.getMinutes();
-  // add a zero in front of numbers<10
+ 
   h = checkTime(h);
   m = checkTime(m);
 
   document.getElementById('time').innerHTML = h + ":" + m ;
   setTimeout("Timer()",1000);
 
-  if(h >= 6){
-  	h2.textContent ="Good Morning Sean"
+  if(h >= 6 && h<12){
+  	h2.textContent ="Good morning,Sean."
   ;}
-  else if(h >= 12){
-  	h2.textContent ="Good Noon Sean"
+  else if(h >= 12 && h<18){
+  	h2.textContent ="Good noon,Sean."
   ;}
-  else if(h >=18){
-  	h2.textContent ="Good Evening Sean"
+  else if(h >=18 && h<24){
+  	h2.textContent ="Good evening,Sean."
   ;}
 };
 
 Timer();
-
