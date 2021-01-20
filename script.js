@@ -1,34 +1,36 @@
-// var dt = new Date();
-// document.getElementById("time").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-
 let h2 = document.getElementById("gm");
+let body = document.getElementsByTagName("body");
 
-let body = document.getElementsByTagName("body")
 
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
 
 function Timer() {
-   let dt=new Date()
-   document.getElementById('time').innerHTML=dt.getHours()+":"+dt.getMinutes();
-   setTimeout("Timer()",1000);
-}
+  let today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  // add a zero in front of numbers<10
+  h = checkTime(h);
+  m = checkTime(m);
+
+  document.getElementById('time').innerHTML = h + ":" + m ;
+  setTimeout("Timer()",1000);
+
+  if(h >= 6){
+  	h2.textContent ="Good Morning Sean"
+  ;}
+  else if(h >= 12){
+  	h2.textContent ="Good Noon Sean"
+  ;}
+  else if(h >=18){
+  	h2.textContent ="Good Evening Sean"
+  ;}
+};
+
 Timer();
 
-
-
-function greet(Timer){
-	if (Timer>= "18:00"){
-		h2.textContent ="Good Evening Sean"
-		setTimeout("greet(Timer)",1000);
-		
-	}
-	else if(Timer>= "06:00"){
-		h2.textContent ="Good Morning Sean"
-		setTimeout("greet(Timer)",1000);
-
-	}
-	else if(Timer>= "12:00"){
-		h2.textContent ="Good Noon Sean"
-		setTimeout("greet(Timer)",1000);
-}};
-
-greet(Timer);
