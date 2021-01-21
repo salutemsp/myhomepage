@@ -1,11 +1,12 @@
 body{
-	background: url("https://source.unsplash.com/daily") no-repeat center center fixed; 
+	background: url("https://source.unsplash.com/1600x900/daily/?mountains,skies") no-repeat center center fixed; 
 	margin:0;
 	line-height: 0px;
   	-webkit-background-size: cover;
  	 -moz-background-size: cover;
  	 -o-background-size: cover;
   	background-size: cover;
+    
 }
 
 .box{

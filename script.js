@@ -24,11 +24,20 @@ function Timer() {
   if(h >= 6 && h<12){
   	h2.textContent ="Good morning,Sean."
   ;}
-  else if(h >= 12 && h<18){
+  else if(h > 11 && h<=12){
   	h2.textContent ="Good noon,Sean."
+  ;}
+  else if(h > 12 && h<=17){
+    h2.textContent ="Good afternoon,Sean."
   ;}
   else if(h >=18 && h<24){
   	h2.textContent ="Good evening,Sean."
+  ;}
+  else if(h <=1 && h<=3){
+    h2.textContent ="Hey maybe you should rest."
+  ;}
+  else if(h <=4 && h<=5){
+    h2.textContent ="Youre early today,Whats up?."
   ;}
 };
 
