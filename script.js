@@ -18,23 +18,23 @@ function Timer() {
   h = checkTime(h);
   m = checkTime(m);
 
-  document.getElementById('time').innerHTML = h + ":" + m ;
+  document.getElementById('time').innerHTML = h + " : " + m ;
   setTimeout("Timer()",1000);
 
   if(h >= 6 && h<12){
-  	h2.textContent ="Good morning,Sean."
+  	h2.textContent ="Good morning, Sean."
   ;}
   else if(h > 11 && h<=12){
-  	h2.textContent ="Good noon,Sean."
+  	h2.textContent ="Good noon, Sean."
   ;}
   else if(h > 12 && h<=17){
-    h2.textContent ="Good afternoon,Sean."
+    h2.textContent ="Good afternoon, Sean."
   ;}
   else if(h >=18 && h<24){
-  	h2.textContent ="Good evening,Sean."
+  	h2.textContent ="Good evening, Sean."
   ;}
   else if(h <=1 && h<=3){
-    h2.textContent ="Hey maybe you should rest."
+    h2.textContent ="You good, Sean?"
   ;}
   else if(h <=4 && h<=5){
     h2.textContent ="Youre early today,Whats up?."
